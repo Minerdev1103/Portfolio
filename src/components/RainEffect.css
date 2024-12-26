@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #202020, #111119);
+  }
+  
+  .rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* ครอบคลุมความกว้างเต็มหน้าจอ */
+    height: 100vh; /* ครอบคลุมความสูงเต็มหน้าจอ */
+    overflow: hidden; /* ซ่อนส่วนเกิน */
+    pointer-events: none; /* ไม่ให้คลิกหรือเลือก */
+  }
+  
+  .rain.back-row {
+    z-index: 1;
+    opacity: 0.5;
+  }
+  
+  .rain.front-row {
+    z-index: 2;
+  }
+  
+  /* รูปแบบการตกของฝน */
+  .rain .drop {
+    position: absolute;
+    bottom: 100%; /* เริ่มจากด้านบนหน้าจอ */
+    width: 15px; /* ความกว้างของฝน */
+    height: 120px; /* ความยาวของฝน */
+    pointer-events: none;
+    animation: drop 0.5s linear infinite;
+  }
+  
+  /* แอนิเมชัน */
+  @keyframes drop {
+    0% {
+      transform: translateY(0vh); /* เริ่มจากบน */
+    }
+    100% {
+      transform: translateY(100vh); /* ลงมาด้านล่าง */
+    }
+  }
+  
+  
+  .rain-effect .stem {
+    width: 1px;
+    height: 60%;
+    margin-left: 7px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
+    animation: stem 0.5s linear infinite;
+  }
+  
+  @keyframes stem {
+    0% {
+      opacity: 1;
+    }
+    65% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  

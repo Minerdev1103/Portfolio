@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.hero-content {
+  position: relative;
+  font-family: 'Rubik', sans-serif;
+  z-index: 3;
+  color: white;
+  text-align: start;
+  padding: 30px;
+  margin: 0 auto;
+  margin-left: 550px;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.2), 
+               0 0 5px rgba(255, 255, 255, 0.2), 
+               0 0 5px rgba(255, 255, 255, 0.2); 
+}
+
+/* ขนาดตัวอักษรและตำแหน่งเริ่มต้น */
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-top: 0px;
+}
+
+.hero-content .highlight {
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.buttons {
+  margin: 10%;
+  margin-top: -10px;
+  margin-left: -10px;
+  text-align: start;
+}
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-7 {
+  background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+
+/* Media Queries สำหรับจอขนาดกลาง (แท็บเล็ต) */
+@media (max-width: 1024px) {
+  .hero-content {
+    margin-left: 300px; /* ลดระยะข้างซ้าย */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem; /* ลดขนาดตัวอักษร */
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Media Queries สำหรับจอขนาดเล็ก (สมาร์ตโฟน) */
+@media (max-width: 768px) {
+  .hero-content {
+    margin-left: 0; /* ตั้งค่าให้ตรงกลาง */
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem; /* ขนาดตัวอักษรเล็กลงสำหรับมือถือ */
+  }
+
+  .hero-content p {
+    font-size: 1rem; /* ขนาดข้อความเล็กลง */
+  }
+}
