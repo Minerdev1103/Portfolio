@@ -1,0 +1,124 @@
+/* กำหนดพื้นที่ container */
+.contact-container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* หัวข้อ */
+  .contact-title {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #FFD700;
+  }
+  
+  /* พื้นหลังแบบ Gradient */
+  .contact-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #68577f, #908e8e, #4a4a4a);
+    background-size: 400% 400%;
+    z-index: -1;
+    animation: gradientBG 8s ease infinite;
+  }
+  
+  /* แอนิเมชั่นของพื้นหลัง */
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* การจัดตำแหน่งของการ์ด */
+  .contact-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* เพื่อให้การ์ดเรียงตามแถว */
+    gap: 20px; /* ช่องว่างระหว่างการ์ด */
+    
+  }
+  
+  /* การ์ดหลัก */
+  .contact-card {
+    perspective: 1000px; /* เพื่อให้มุมมอง 3D */
+    margin-bottom: 200px;
+  }
+  
+  .card-inner {
+    width: 250px;
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s; /* เพิ่มเวลาให้การ flip สวยงาม */
+  }
+  
+  .contact-card:hover .card-inner {
+    transform: rotateY(180deg); /* เมื่อ hover การ์ดจะหมุนไปอีกด้าน */
+  }
+  
+  /* หน้าแรกของการ์ด */
+  .card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .contact-img {
+    font-size: 40px;
+    color: white;
+  }
+  
+  /* ด้านหลังของการ์ด */
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    transform: rotateY(180deg); /* ด้านหลังจะหมุนไป 180 องศา */
+  }
+  
+  .card-back h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .card-back p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .card-back a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .card-back a:hover {
+    text-decoration: underline;
+  }
+  

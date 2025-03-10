@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* ทำให้ section เต็มหน้าจอและจัดตรงกลางการ์ด */
+.portfolio-section {
+    display: flex;
+    flex-direction: column;  /* ใช้ flex column เพื่อให้ h2 อยู่ด้านบนสุด */
+    justify-content: center;  /* จัดกึ่งกลางการ์ดในแนวตั้ง */
+    align-items: center;      /* จัดกึ่งกลางการ์ดในแนวนอน */
+    height: 100vh;            /* ให้เต็มหน้าจอ */
+    background-color: #5c5c5c; /* สีพื้นหลัง (ปรับได้) */
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  /* จัดให้ h2 อยู่ที่หัวสุดของหน้าก่อนการ์ด */
+  .section-title1 {
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    font-size: 2rem; /* ปรับขนาดตัวอักษร */
+    font-weight: bold; /* ทำให้ตัวหนา */
+    margin-bottom: 100px; /* เพิ่มระยะห่างระหว่าง h2 กับการ์ด */
+    margin-top: -200px;
+    color: #FFD700;
+  }
+  
+  /* ใช้ Flexbox เพื่อเรียงการ์ดในแถวเดียว */
+  .card-container {
+    display: flex;
+    flex-direction: row; /* เรียงการ์ดเป็นแถวเดียว */
+    gap: 70px; /* ระยะห่างระหว่างการ์ด */
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    flex-wrap: wrap; /* ถ้าหน้าจอเล็กลง จะให้มันขึ้นบรรทัดใหม่ */
+  }
+  
+  
+
+.card {
+    width: 190px;
+    height: 254px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s;
+    position: relative;
+    box-shadow: 0 4px 15px 0 rgb(115, 0, 255);
+  }
+  .wrapper {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  /* ปรับให้ card-image แสดงรูปภาพเป็นวงกลม */
+.card-image {
+    width: 130px;             /* กำหนดขนาดของการ์ด */
+    height: 130px;            /* กำหนดขนาดของการ์ด */
+    border-radius: 50%;       /* ทำให้มุมของการ์ดเป็นวงกลม */
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;         /* ป้องกันไม่ให้รูปภาพเกินขอบเขต */
+    font-size: 5em;
+    font-weight: 900;
+    transition: all 0.3s;     /* เพิ่ม transition สำหรับเอฟเฟ็กต์ */
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        /* ให้รูปภาพเต็มพื้นที่ในกรอบวงกลม */
+    transition: all 0.3s;     /* เพิ่ม transition ให้กับรูป */
+  }
+  
+  /* จัดการกับการจัดตำแหน่งของ title และ name */
+.content {
+    height: fit-content;
+    display: flex;
+    flex-direction: column; /* เปลี่ยนจากแถวเป็นแนวตั้ง */
+    align-items: center;
+    justify-content: center;
+    gap: 1px; /* เพิ่มระยะห่างระหว่าง title กับ name */
+    margin-top: -20px;
+  }
+  
+  .title {
+    font-size: 0.72em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #4d4d4d;
+  }
+  
+  .price {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .old-price {
+    font-size: 0.7em;
+    text-decoration: line-through;
+    color: #adadad;
+  }
+  .card-btn {
+    margin-top: -5px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(24, 24, 24);
+    border: none;
+    border-radius: 40px;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .card:hover .card-image {
+    height: 120px;
+  }
+  .card:hover .card-btn {
+    margin-top: -25px;
+  }
+  .card-btn:hover {
+    background-color: greenyellow;
+    color: rgb(35, 35, 35);
+  }
+  .card:hover {
+    background-color: white;
+  }
+  
+  .tag {
+    position: absolute;
+    background-color: rgb(161, 70, 247);
+    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    left: 12px;
+    top: 0px;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.75em;
+    font-weight: 500;
+  }
+
+  /* สไตล์สำหรับ marquee */
+.image-marquee {
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: -200px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .marquee-img {
+    width: 350px;
+    height: 250px;
+    margin-right: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.8s ease-in-out;
+  }
+  
+  .marquee-img:hover {
+    transform: scale(1.1);
+  }
+  

@@ -1,0 +1,12 @@
+/* App.css */
+
+/* ลบการตั้งค่าพื้นหลังจาก body */
+body {
+    background-color: initial; /* ล้างค่าพื้นหลัง */
+  }
+  
+  /* หรืออาจจะตั้งพื้นหลังเฉพาะในหน้า Pi */
+  .pi-background {
+    background-color: white; /* ตั้งค่าพื้นหลังให้เป็นสีขาว */
+  }
+  

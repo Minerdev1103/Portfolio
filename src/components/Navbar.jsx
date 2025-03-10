@@ -10,11 +10,12 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">MyLogo</div>
+      <div className="logo">&lt;/&gt;
+      </div>
       <div className={`menu ${isOpen ? "open" : ""}`}>
         <a href="#home" className="menu-item">Home</a>
         <a href="#about" className="menu-item">About</a>
-        <a href="#services" className="menu-item">Portfolio</a>
+        <a href="#portfolio" className="menu-item">Portfolio</a>
         <a href="#contact" className="menu-item">Contact</a>
       </div>
       <div className="hamburger" onClick={toggleMenu}>

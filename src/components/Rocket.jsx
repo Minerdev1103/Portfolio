@@ -120,7 +120,7 @@ const Rocket = () => {
       
         for (let i = 0; i < positions.length; i += 3) {
           positions[i + 1] -= Math.random() * 9.5; // เคลื่อนที่ลงในแกน Y
-          positions[i] *= 1.06; // กระจายออกในแกน X
+          positions[i] *= 1.26; // กระจายออกในแกน X
           positions[i + 2] *= 3.06; // กระจายออกในแกน Z
           opacities[i / 3] -= 0.02; // ลดความโปร่งใส
       
@@ -182,8 +182,8 @@ const Rocket = () => {
       id="rocketCanvas"
       style={{
         position: "absolute",
-        top: "70%",
-        left: "27%",
+        top: "50%",
+        left: "20%",
         transform: "translate(-50%, -50%)",
         width: "100vw",
         height: "100vh",
