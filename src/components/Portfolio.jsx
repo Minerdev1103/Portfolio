@@ -7,10 +7,10 @@ const Portfolio = () => {
 
   // ข้อมูลของการ์ดแต่ละใบ
   const cards = [
-    { id: 1, title: "ออกแบบเเละพัฒนาเว็บไซต์", name: "Pi Securities", tag: "เว็บไซต์ หุ้น การเงิน", img: "../../public/photo/pi.png", path: "/pi" },
-    { id: 2, title: "ออกแบบเเละพัฒนาเว็บไซต์", name: "Klang Hospital", tag: "เว็บไซต์การจองห้องประชุม", img: "../../public/photo/klang.png", path: "/klang" },
-    { id: 3, title: "ออกแบบแอปพลิเคชั่น", name: "Fast Delivery", tag: "แอปพลิเคชั่น Food Delivery", img: "../../public/photo/deli.png", path: "/delivery" },
-    { id: 4, title: "ออกแบบเเอพพลิเคชั่น", name: "<H>Health", tag: "แอปพลิเคชั่นสุขภาพ", img: "../../public/photo/health.png", path: "/health" },
+    { id: 1, title: "ออกแบบเเละพัฒนาเว็บไซต์", name: "Pi Securities", tag: "เว็บไซต์ หุ้น การเงิน", img: "/photo/pi.png", path: "/pi" },
+    { id: 2, title: "ออกแบบเเละพัฒนาเว็บไซต์", name: "Klang Hospital", tag: "เว็บไซต์การจองห้องประชุม", img: "/photo/klang.png", path: "/klang" },
+    { id: 3, title: "ออกแบบแอปพลิเคชั่น", name: "Fast Delivery", tag: "แอปพลิเคชั่น Food Delivery", img: "/photo/deli.png", path: "/delivery" },
+    { id: 4, title: "ออกแบบเเอพพลิเคชั่น", name: "<H>Health", tag: "แอปพลิเคชั่นสุขภาพ", img: "/photo/health.png", path: "/health" },
   ];
 
   const images = [
