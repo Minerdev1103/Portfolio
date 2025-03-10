@@ -14,11 +14,11 @@ const Portfolio = () => {
   ];
 
   const images = [
-    "/public/photo/cer/1.png",
-    "/public/photo/cer/2.png",
-    "/public/photo/cer/3.png",
-    "/public/photo/cer/4.png",
-    "/public/photo/cer/5.png",
+    "/photo/cer/1.png",
+    "/photo/cer/2.png",
+    "/photo/cer/3.png",
+    "/photo/cer/4.png",
+    "/photo/cer/5.png",
   ];
 
   return (

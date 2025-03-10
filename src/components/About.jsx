@@ -23,7 +23,7 @@ const About = () => {
         <div className="about-content">
           <div className="about-image">
             <img
-              src="/public/photo/profile.jpg"
+              src="/photo/profile.jpg"
               alt="Your Name"
             />
           </div>
