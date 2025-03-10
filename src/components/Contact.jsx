@@ -1,6 +1,6 @@
 import React from "react";
 import { FaPhone, FaEnvelope, FaGithub, FaFacebook, FaLine } from "react-icons/fa";
-import "./contact.css"; // ใช้ CSS ที่จะสร้างต่อไปนี้
+import "./Contact.css"; // ใช้ CSS ที่จะสร้างต่อไปนี้
 
 const contacts = [
   { icon: <FaPhone />, label: "เบอร์โทร", info: "096-1475075", link: "tel:0961475075", color: "#4CAF50" },
