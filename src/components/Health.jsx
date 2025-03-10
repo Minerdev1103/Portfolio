@@ -7,22 +7,22 @@ function Health() {
   const navigate = useNavigate(); // Hook สำหรับนำทาง
   // ข้อมูลของรูปภาพ
   const images = [
-    { id: 1, src: "../../public/photo/health/1.png", alt: "Image 1" },
-    { id: 2, src: "../../public/photo/health/2.png", alt: "Image 2" },
-    { id: 3, src: "../../public/photo/health/3.png", alt: "Image 3" },
-    { id: 4, src: "../../public/photo/health/4.png", alt: "Image 4" },
-    { id: 5, src: "../../public/photo/health/5.png", alt: "Image 5" },
+    { id: 1, src: "/public/photo/health/1.png", alt: "Image 1" },
+    { id: 2, src: "/public/photo/health/2.png", alt: "Image 2" },
+    { id: 3, src: "/public/photo/health/3.png", alt: "Image 3" },
+    { id: 4, src: "/public/photo/health/4.png", alt: "Image 4" },
+    { id: 5, src: "/public/photo/health/5.png", alt: "Image 5" },
     
-    { id: 7, src: "../../public/photo/health/7.png", alt: "Image 7" },
-    { id: 8, src: "../../public/photo/health/8.png", alt: "Image 8" },
-    { id: 9, src: "../../public/photo/health/9.png", alt: "Image 9" },
-    { id: 10, src: "../../public/photo/health/10.png", alt: "Image 10" },
-    { id: 11, src: "../../public/photo/health/11.png", alt: "Image 11 "},
-    { id: 12, src: "../../public/photo/health/12.png", alt: "Image 12" },
-    { id: 13, src: "../../public/photo/health/13.png", alt: "Image 13" },
-    { id: 14, src: "../../public/photo/health/14.png", alt: "Image 14" },
-    { id: 15, src: "../../public/photo/health/15.png", alt: "Image 15" },
-    { id: 16, src: "../../public/photo/health/16.png", alt: "Image 16" },
+    { id: 7, src: "/public/photo/health/7.png", alt: "Image 7" },
+    { id: 8, src: "/public/photo/health/8.png", alt: "Image 8" },
+    { id: 9, src: "/public/photo/health/9.png", alt: "Image 9" },
+    { id: 10, src: "/public/photo/health/10.png", alt: "Image 10" },
+    { id: 11, src: "/public/photo/health/11.png", alt: "Image 11 "},
+    { id: 12, src: "/public/photo/health/12.png", alt: "Image 12" },
+    { id: 13, src: "/public/photo/health/13.png", alt: "Image 13" },
+    { id: 14, src: "/public/photo/health/14.png", alt: "Image 14" },
+    { id: 15, src: "/public/photo/health/15.png", alt: "Image 15" },
+    { id: 16, src: "/public/photo/health/16.png", alt: "Image 16" },
   ];
 
   return (

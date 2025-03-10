@@ -7,16 +7,16 @@ function Klang() {
   const navigate = useNavigate(); // Hook สำหรับนำทาง
   // ข้อมูลของรูปภาพ
   const images = [
-    { id: 1, src: "../../public/photo/klang/1.png", alt: "Image 1" },
-    { id: 2, src: "../../public/photo/klang/2.png", alt: "Image 2" },
-    { id: 3, src: "../../public/photo/klang/3.png", alt: "Image 3" },
-    { id: 4, src: "../../public/photo/klang/4.png", alt: "Image 4" },
-    { id: 5, src: "../../public/photo/klang/5.png", alt: "Image 5" },
-    { id: 6, src: "../../public/photo/klang/6.png", alt: "Image 6" },
-    { id: 7, src: "../../public/photo/klang/7.png", alt: "Image 7" },
-    { id: 8, src: "../../public/photo/klang/8.png", alt: "Image 8" },
-    { id: 9, src: "../../public/photo/klang/9.png", alt: "Image 9" },
-    { id: 10, src: "../../public/photo/klang/10.png", alt: "Image 10" },
+    { id: 1, src: "/public/photo/klang/1.png", alt: "Image 1" },
+    { id: 2, src: "/public/photo/klang/2.png", alt: "Image 2" },
+    { id: 3, src: "/public/photo/klang/3.png", alt: "Image 3" },
+    { id: 4, src: "/public/photo/klang/4.png", alt: "Image 4" },
+    { id: 5, src: "/public/photo/klang/5.png", alt: "Image 5" },
+    { id: 6, src: "/public/photo/klang/6.png", alt: "Image 6" },
+    { id: 7, src: "/public/photo/klang/7.png", alt: "Image 7" },
+    { id: 8, src: "/public/photo/klang/8.png", alt: "Image 8" },
+    { id: 9, src: "/public/photo/klang/9.png", alt: "Image 9" },
+    { id: 10, src: "/public/photo/klang/10.png", alt: "Image 10" },
   
   ];
 
