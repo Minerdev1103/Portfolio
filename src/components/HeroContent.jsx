@@ -3,6 +3,24 @@ import "./HeroContent.css"; // Import the CSS file for styling
 import Navbar from "./Navbar";
 
 const HeroContent = () => {
+
+  const handleDownload = () => {
+    const files = [
+      "/PortfolioEng.pdf",  // path ตรงไปยังไฟล์ใน public
+      "/PortfolioThai.pdf"
+    ];
+  
+    files.forEach((file) => {
+      const link = document.createElement("a");
+      link.href = file;
+      link.setAttribute("download", file.split("/").pop()); // ตั้งชื่อไฟล์ให้ตรงกับต้นฉบับ
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  };
+  
+
   return (
     
     <div className="hero-content">
@@ -14,7 +32,7 @@ const HeroContent = () => {
         my knowledge for both personal growth and the benefit of my organization.</p>
 
         <div class="buttons">
-        <button class="btn-hover color-7">Downlaod CV</button>
+        <button class="btn-hover color-7" onClick={handleDownload}>Downlaod CV</button>
         </div>
     </div>
   );
