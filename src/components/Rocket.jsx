@@ -38,7 +38,7 @@ const Rocket = () => {
 
       const loader = new GLTFLoader();
       loader.load(
-        "/assets/rocket.gltf",
+        "/rocket.gltf",
         (gltf) => {
           rocket = gltf.scene;
           rocket.position.y = 50;
