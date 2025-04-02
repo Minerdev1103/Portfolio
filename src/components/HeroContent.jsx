@@ -6,8 +6,8 @@ const HeroContent = () => {
 
   const handleDownload = () => {
     const files = [
-      "/PortfolioEng.pdf",  // path ตรงไปยังไฟล์ใน public
-      "/PortfolioThai.pdf"
+      "/Sorayut_Thamsanong_CV.pdf",  // path ตรงไปยังไฟล์ใน public
+      
     ];
   
     files.forEach((file) => {
